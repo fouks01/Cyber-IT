@@ -1,0 +1,78 @@
+.business
+  &-wrapper
+    position:
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../img/pixel-map.png')
+      background-repeat: no-repeat
+      width: 669px
+      height: 461px
+      right: 0
+      // top: 0
+      z-index: -3
+  &-main
+    display: flex
+    justify-content: space-around
+  &-article
+    &__title
+      max-width: 470px
+      max-height: 100px
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 700
+      font-size: 42px
+      line-height: 50px
+      color: #99EFD0
+      margin-bottom: 32px
+    &__text
+      color: #F2994A
+    &__info
+      max-width: 470px
+      max-height: 84px
+      font-family: 'Gilroy'
+      font-size: 15px
+      line-height: 28px
+      letter-spacing: 0.5px
+      color: #8476AA
+      margin-top: 0
+      margin-bottom: 46px
+    &__button
+      width: 155px
+      height: 54px
+      font-family: 'Rubik'
+      font-style: normal
+      font-weight: 500
+      font-size: 12px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 2px
+      text-transform: uppercase
+      color: #FFFFFF
+      background: #F2994A
+      box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.23)
+      border-radius: 3px
+      border: none
+      cursor: pointer
+  &-price
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      width: 130px
+      height: 65px
+      background-image: url('../img/6-month.png')
+      bottom: 112px
+      right: -112px
+      z-index: -1
+    &::after
+      position: absolute
+      content: ''
+      width: 112px
+      height: 108px
+      background-image: url('../img/business-arrow.svg')
+      background-repeat: no-repeat
+      top: 114px
+      left: -63px
+      z-index: 2
+    &__image

@@ -1,0 +1,37 @@
+.companies
+  // padding-top: 100px
+  padding-bottom: 93px
+  position: relative
+  background-repeat: no-repeat
+  &-wrapper
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background-image: url('../img/frame-com-left.svg')
+      width: 360px
+      height: 566px
+      background-repeat: no-repeat
+      top: -101px
+      left: 0
+      opacity: 0.1
+    &::after
+      position: absolute
+      content: ''
+      background-image: url('../img/frame-com-right.svg')
+      width: 363px
+      height: 566px
+      background-repeat: no-repeat
+      top: -56px
+      right: 0
+      opacity: 0.1
+  &-block
+    display: flex
+    justify-content: space-evenly
+  &-image
+    opacity: 0.3
+.container
+  &__companies
+    position: relative
+._icon-Subbly
+  color: red

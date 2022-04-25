@@ -1,0 +1,98 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    width: 478px
+    // height: 490px
+    padding: 33px 88px
+    background-color: #183B56
+    transform: translate(-50%, -50%)
+    color: $light
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    max-height: 100vh
+    overflow-y: auto
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 17px
+    top: 18px
+    text-decoration: none
+    cursor: pointer
+  &__input
+    width: 100%
+    margin-top: 15px
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    resize: none
+    font-weight: bold
+  &__button
+    // margin-top: 15px
+    margin-top: 0
+    cursor: pointer
+    background: $primary
+    color: $light
+    border-radius: 8px
+    width: 124px
+    height: 41px
+    border: none
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    margin-right: 22px
+    letter-spacing: 0.6px
+    margin-left: 3px
+    // &:hover
+    //   background-color: #FAAD13
+    //   transition: background-color 0.3s
+    &-back
+      margin-top: 30px
+      &:hover
+        background-color: #FAAD13
+        transition: background-color 0.3s
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+  &__title
+    font-style: normal
+    font-family: Roboto Condensed
+    font-weight: bold
+    font-size: 22px
+    line-height: 23px
+    margin-bottom: 15px
+    text-transform: uppercase
+    text-align: center
+    &--mb-3
+      &-3
+        margin: 0
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-left: 4px

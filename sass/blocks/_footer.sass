@@ -1,0 +1,103 @@
+.footer
+  padding-top: 139px
+  &-wrapper
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-image: url('../img/footer.png')
+      background-repeat: x-repeat
+      width: 100%
+      height: 580px
+      z-index: -20
+      right: 0
+      top: -73px
+  &-main
+    max-width: 1015px
+    // margin: auto
+    &__top-block
+      display: flex
+      justify-content: space-between
+    &__title
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 700
+      font-size: 26px
+      line-height: 32px
+      letter-spacing: 0.325px
+      color: #F2994A
+    &__list
+      display: flex
+    &__bottom-block
+      display: flex
+      justify-content: space-between
+    &__social
+      width: 152px
+    &__list
+      list-style-type: none
+      padding: 0
+      justify-content: space-between
+    &__ul
+      list-style-type: none
+      padding: 0
+    &__item
+      margin-bottom: 16px
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 300
+      font-size: 15px
+      line-height: 20px
+      letter-spacing: 0.2px
+      &:hover
+        transition: 0.5s
+        transform: scale(1.2)
+      &-title
+        margin-bottom: 25px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 700
+        font-size: 15px
+        line-height: 18px
+        letter-spacing: 0.2px
+        color: #FFFFFF
+        cursor: pointer
+        text-decoration: none
+        &:hover
+          transition: 0.5s
+          transform: scale(1.2)
+    &__link
+      cursor: pointer
+      text-decoration: none
+      color: #FFFFFF
+      &:hover
+        color: #F2994A
+  &-end
+    margin: auto
+    margin-top: 120px
+    margin-bottom: 40px
+    &__ul
+      display: flex
+      justify-content: center
+      list-style-type: none
+      padding: 0
+    &__item
+      margin-right: 33px
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.2px
+      &:hover
+        transition: 0.5s
+        transform: scale(1.2)
+    &__link
+      cursor: pointer
+      text-decoration: none
+      color: #8D8D8D
+      &:hover
+        color: #F2994A
+  &-image
+    &__facebook
+      &:hover
+        color: red
