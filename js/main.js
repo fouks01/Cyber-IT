@@ -10,12 +10,7 @@ $(document).ready(function () {
       },
     });
   });
-  // const menuButton = document.querySelector(".navbar__link");
-  // menuButton.addEventListener('click', function () {
-  //   console.log('Клик по кнопке меню');
-  //   document
-  //     .querySelector('.navbar__sector')
-  //     .classList.toggle('.navbar__sector--visible');
-  // });
+
   AOS.init();
+
 });

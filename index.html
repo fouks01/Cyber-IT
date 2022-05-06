@@ -14,7 +14,15 @@
     <link type="Image/x-icon" href="img/favicon.ico" rel="icon" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/iconsfont.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/jquery.validate.min.js" defer></script>
+    <script src="js/aos.js" defer></script>
+    <script src="js/jquery.fancybox.min.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/mobileMenu.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header header--mobile_fixed">
@@ -32,11 +40,21 @@
                 </a>
                 <div class="navbar__sector">
                   <ul class="navbar__list">
-                    <li data-text="GLITCH" class="navbar__item">ABOUT</li>
-                    <li class="navbar__item">GALLERY</li>
-                    <li class="navbar__item">PRICING</li>
-                    <li class="navbar__item">FAQ</li>
-                    <li class="navbar__item">BENEFITS</li>
+                    <li data-text="GLITCH" class="navbar__item">
+                      <a href="#" class="navbar__item-link">ABOUT</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__item-link">GALLERY</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__item-link">PRICING</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__item-link">FAQ</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__item-link">BENEFITS</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -55,6 +73,29 @@
       </div>
       <!-- /.header-wrapper -->
     </header>
+
+    <menu>
+      <div class="container">
+        <ul class="mobile-list">
+          <li data-text="GLITCH" class="mobile-item">
+            <a href="#" class="mobile-item__link">ABOUT</a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" class="mobile-item__link">GALLERY</a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" class="mobile-item__link">PRICING</a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" class="mobile-item__link">FAQ</a>
+          </li>
+          <li class="mobile-item">
+            <a href="#" class="mobile-item__link">BENEFITS</a>
+          </li>
+        </ul>
+      </div>
+    </menu>
+
     <section class="hero">
       <div class="hero-wrapper">
         <div class="container">
@@ -76,7 +117,10 @@
               <!-- //hero-button -->
               <div class="hero-intro">
                 <div class="hero-intro__video">
-                  <a class="hero-intro__wall" href="#" class="intro"
+                  <a
+                    class="hero-intro__wall"
+                    data-fancybox="video-gallery"
+                    href="https://www.youtube.com/watch?v=jvb018tj1cI"
                     ><img
                       src="img/Play.png"
                       alt="Icon: PLay"
@@ -112,7 +156,7 @@
     <!-- /.hero -->
     <section class="companies">
       <div class="companies-wrapper">
-        <div class="container container__companies">
+        <div class="container container-companies">
           <!-- <img src="img/frame-com.svg" alt="" class="container-image" /> -->
           <div class="companies-block" data-aos="fade-right">
             <img
@@ -156,7 +200,7 @@
         <div class="container">
           <div class="choice-block">
             <div class="choice-article">
-              <h3 class="choice-title__main">Your choice</h3>
+              <h3 class="choice-title-main">Your choice</h3>
               <p class="choice-subtitle">
                 There are many reasons to get down and start to get depressed
                 about your situation.
@@ -574,7 +618,7 @@
                     <svg
                       width="40"
                       height="40"
-                      class="facebook-image__facebook"
+                      class="facebook-image"
                       viewBox="0 0 40 40"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -698,9 +742,46 @@
       <!-- /.footer-wrapper -->
     </footer>
     <!-- /.footer -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
+
+    <div class="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+        <div class="main-form">
+          <h3 class="main-title">Contact us!</h3>
+          <form id="form3" name="user_form">
+            <div>
+              <input
+                type="text"
+                class="form-name"
+                id="form3-name"
+                name="user_name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                class="form-phone"
+                id="form3-phone"
+                name="user_phone"
+                placeholder="Your phone number"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                class="form-email"
+                id="form3-email"
+                name="user_email"
+                placeholder="Your E-mail"
+              />
+            </div>
+            <button class="btn form-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -3,7 +3,6 @@
     overflow-x: hidden
     &-image
       max-width: 580px
-
   .footer
     &-wrapper
       &::before
@@ -195,6 +194,58 @@
       &__top-block
         margin-left: 45px
         margin-right: 45px
+@media (min-width: 768px)
+  .navbar
+    &__item
+      &:hover
+        transition: 0.5s
+        color: #F2994A
+        transform: scale(1.2)
+      &-link
+        cursor: pointer
+        &:hover
+          color: #F2994A
+  .footer
+    &-main
+      &__item
+        &:hover
+          transition: 0.5s
+          transform: scale(1.2)
+        &-title
+          &:hover
+            transition: 0.5s
+            transform: scale(1.2)
+      &__google
+        &:hover
+          transition: 0.5s
+          transform: scale(1.5)
+      &__twitter
+        &:hover
+          transition: 0.5s
+          transform: scale(1.5)
+      &__facebook
+        &:hover
+          transition: 0.5s
+          transform: scale(1.5)
+      &__link
+        &:hover
+          color: #F2994A
+    &-end
+      &__item
+        &:hover
+          transition: 0.5s
+          transform: scale(1.2)
+      &__link
+        &:hover
+          color: #F2994A
+    &-image
+      &:hover
+        transition: 0.5s
+        transform: scale(1.2)
+      &__facebook
+        &:hover
+          color: red
+
 @media (max-width: 768px)
   .header
     margin: 0
@@ -207,15 +258,6 @@
         right: 0
         z-index: 99
         background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 235.28%)
-        // &::before
-        //   content: ''
-        //   position: absolute
-        //   top: 0
-        //   left: 0
-        //   width: 100%
-        //   height: 100%
-        //   background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 235.28%)
-        //   z-index: 98
   body
     padding-top: 170px
   .container
@@ -251,7 +293,7 @@
       margin-bottom: 50px
   .choice
     &-title
-      &__main
+      &-main
         font-size: 39px
     &-statement
       &__item
@@ -324,6 +366,9 @@
       &__top-block
         margin-left: 20px
         margin-right: 20px
+  .popup
+    &-content
+      width: 480px
 @media (max-width: 630px)
   .navbar
     &__mainbar
@@ -353,7 +398,7 @@
       max-width: 480px
   .choice
     &-title
-      &__main
+      &-main
         font-size: 36px
     &-statement
       justify-content: center
@@ -419,7 +464,7 @@
         width: 146px
   .choice
     &-title
-      &__main
+      &-main
         font-size: 25px
     &-subtitle
       font-size: 15px
@@ -559,6 +604,9 @@
         flex-wrap: wrap
         width: 188px
         margin: auto
+  .popup
+    &-content
+      width: 95%
 @media (max-width: 405px)
   .hero
     &-image
@@ -614,7 +662,7 @@
         margin-bottom: 15px
   .choice
     &-title
-      &__main
+      &-main
         font-size: 25px
     &-statement
       &__title

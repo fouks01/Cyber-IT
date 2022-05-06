@@ -1,0 +1,93 @@
+.popup
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 9
+    background-color: rgba(0, 0, 0, .5)
+    &-content
+        position: fixed
+        text-align: center
+        width: 500px
+        height: 420px
+        left: 50%
+        top: 25%
+        -webkit-transform: translateX(-50px)
+        transform: translateX(-50%)
+        padding: 30px
+        background: #2b2c52
+        border-radius: 5px
+    &-close
+        position: absolute
+        z-index: -1
+        top: 0
+        right: 3%
+        text-align: center
+        border: none
+        background: #2b2c52
+        font-size: 52px
+        color: #19b5fe
+        cursor: pointer
+    &-title
+        font-family: 'PT Sans Caption'
+        color: #fff
+.form
+    &-name,
+    &-phone,
+    &-email
+        display: block
+        left: 0
+        margin: auto
+        // margin-right: 0
+        margin-top: 20px
+        width: 254px
+        height: 43px
+        border-radius: 3px
+        font-size: 14px
+        font-family: Inter
+        font-style: normal
+        font-weight: 400
+        border: none
+        padding-left: 25px
+        color: #000
+    &-inputs
+        display: flex
+        justify-content: center
+.form-btn
+    width: 159px
+    height: 46px
+    font-family: Rubik
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: #FFFFFF
+    background-color: #F2994A
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13)
+    border-radius: 3px
+    border: none
+    cursor: pointer
+    margin-top: 20px
+.user
+    &_form
+        margin-top: 200px
+.form
+    &-name
+        margin-top: 30px
+    &-email
+        margin-bottom: 15px
+.main
+    &-title
+        font-family: Gilroy
+        font-style: normal
+        font-weight: 700
+        font-size: 19px
+        line-height: 32px
+        letter-spacing: 0.325px
+        color: #99EFD0
