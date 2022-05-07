@@ -7,17 +7,26 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
 $newsletter = $_POST['newsletter'];
 $email = $_POST['email'];
 
 
-if(isset($newsletter)) {
-$title = "Подписка в Ehya";
+if(isset($name) & isset($phone) & isset($email)) {
+$title = "Subscribe to Cyber-IT";
 $body = "
-<h2>Подписка</h2>
-<b>Подписка на новости:</b> $newsletter<br>";
+<h2>Subscribtion</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br>
+<b>E-mail:</b> $email<br>";
 }
+
+else if(isset($newsletter)) {
+$title = "Subscribe to Cyber-IT";
+$body = "
+<h2>Subscribtion</h2>
+<b>Subscribtion news:</b> $newsletter<br>";
+}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -34,7 +43,7 @@ try {
     $mail->Password   = 'YR5-2Et-yvP-fQ6'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('aivengocorp@gmail.com', 'Александр Айвенго'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('aivengocorp@gmail.com', 'Cyber-IT'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('aivengoalek@yandex.ru');  
@@ -54,4 +63,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+// header('Location: thankyou.html');

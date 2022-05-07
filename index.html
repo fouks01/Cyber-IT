@@ -59,7 +59,7 @@
                 </div>
               </div>
               <div class="navbar-buttons">
-                <a class="navbar-buttons__sign-in"
+                <a href="#" class="navbar-buttons__sign-in"
                   ><span class="navbar-buttons__text">SIGN IN</span></a
                 >
                 <button class="navbar-buttons__sign-up">SIGN UP</button>
@@ -110,7 +110,7 @@
               </div>
               <div class="hero-button">
                 <button class="hero-button__learn">Learn More</button>
-                <a href="" class="hero-button__demo"
+                <a href="#" class="hero-button__demo"
                   ><span class="hero-button__text">Demo</span></a
                 >
               </div>
@@ -748,13 +748,13 @@
         <button class="popup-close">&times;</button>
         <div class="main-form">
           <h3 class="main-title">Contact us!</h3>
-          <form id="form3" name="user_form">
+          <form action="send.php" id="form3" method="POST" name="user_form">
             <div>
               <input
                 type="text"
                 class="form-name"
                 id="form3-name"
-                name="user_name"
+                name="name"
                 placeholder="Your name"
                 required
               />
@@ -764,7 +764,7 @@
                 type="tel"
                 class="form-phone"
                 id="form3-phone"
-                name="user_phone"
+                name="phone"
                 placeholder="Your phone number"
                 required
               />
@@ -774,7 +774,7 @@
                 type="email"
                 class="form-email"
                 id="form3-email"
-                name="user_email"
+                name="email"
                 placeholder="Your E-mail"
               />
             </div>
